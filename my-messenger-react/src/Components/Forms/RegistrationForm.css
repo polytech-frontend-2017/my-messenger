@@ -1,0 +1,6 @@
+.registration_form {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}

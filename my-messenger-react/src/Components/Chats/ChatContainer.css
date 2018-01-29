@@ -1,0 +1,10 @@
+.container {
+    width: 300px;
+    margin: 100px auto;
+}
+.chat-container {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+.auth-container {
+    margin: 30px;
+    text-align: center;
+}
+.login-form {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.login-form-button {
+    width: 100%;
+}

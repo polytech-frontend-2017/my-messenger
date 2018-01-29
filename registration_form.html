@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My-Messenger</title>
+</head>
+<body>
+    <form id="register" action="auth/registration.php" method="post" accept-charset="UTF-8">
+        <label for='username' >Username*:</label>
+        <input type='text' name='username' id='username' maxlength="50" /> <br>
+        <label for='email' >Email Address*:</label>
+        <input type='text' name='email' id='email' maxlength="50" /> <br>
+        <label for='password' >Password*:</label>
+        <input type='password' name='password' id='password' maxlength="50" /> <br>
+        <label for='password' >Confirm password*:</label>
+        <input type='password' name='password' id='password_confirm' maxlength="50" /> <br>
+        <input hidden type='submit' name='Submit' value='Submit' id="submit"/>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $("#password_confirm, #password").keyup(checkPasswords);
+        });
+        function checkPasswords() {
+            var password = $("#password").val();
+            var confirm = $("#password_confirm").val();
+
+            if (password !== confirm) {
+                $("#submit").hide();
+            } else {
+                $("#submit").show();
+            }
+        }
+    </script>
+
+</body>
+</html>

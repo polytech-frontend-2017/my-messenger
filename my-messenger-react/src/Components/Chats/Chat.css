@@ -1,0 +1,19 @@
+.chat {
+    width: 300px;
+    margin: 100px auto;
+}
+.chat-delete-button {
+    width: 300px;
+    margin-bottom: 30px;
+    background-color: red;
+    color: white;
+}
+.chat-send-input {
+    width: 300px;
+}
+.chat-send-input-field {
+    width: 70%;
+}
+.chat-send-input-button {
+    width: 20%;
+}
