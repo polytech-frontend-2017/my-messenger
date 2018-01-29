@@ -18,17 +18,13 @@ export default class ChatCreator extends React.Component {
     handleCreateChat() {
         let data = new FormData();
         data.append('users', JSON.stringify(this.state.users));
-        console.log(this.state.users);
         axios({
             method: 'post',
             url: API_CHATS,
             data: data,
             withCredentials: true
         }).then(function (response) {
-            if (response.data.success) {
-                console.log("success");
-            }
-            console.log(response.data);
+
         });
     }
 
@@ -37,13 +33,11 @@ export default class ChatCreator extends React.Component {
             let users = this.state.users;
             users.push(event.target.id);
             this.setState({users: users});
-            console.log(users);
         } else {
             let users = this.state.users;
             const index = users.indexOf(event.target.id);
             users.splice(index);
             this.setState({users: users});
-            console.log(users);
         }
     }
 

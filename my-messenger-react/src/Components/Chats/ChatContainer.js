@@ -9,13 +9,11 @@ import {API_CHAT_USERS, API_CHATS, API_LOGOUT} from "./helper";
 export default class ChatContainer extends React.Component {
 
     handleLogout = () => {
-        console.log(this);
         axios({
             method: 'get',
             url: API_LOGOUT,
             withCredentials: true
         }).then(function (response) {
-            console.log(response);
         });
     };
 

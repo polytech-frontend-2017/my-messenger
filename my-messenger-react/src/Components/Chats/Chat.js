@@ -56,7 +56,6 @@ export default class Chat extends React.Component {
     }
 
     handleClick() {
-        console.log(this.state.message);
         let data = new FormData();
         data.append('message', this.state.message);
         const url = API_SEND_MESSAGE(this.props.chatId);
@@ -66,7 +65,6 @@ export default class Chat extends React.Component {
             data: data,
             withCredentials: true
         }).then(function (response) {
-            console.log(response.data);
         });
     }
 
@@ -82,7 +80,6 @@ export default class Chat extends React.Component {
             withCredentials: true
         }).then(function (response) {
             if (response.data.success) {
-                console.log("success");
             }
         });
     }

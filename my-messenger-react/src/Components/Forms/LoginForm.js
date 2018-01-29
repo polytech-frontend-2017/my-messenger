@@ -36,7 +36,6 @@ export default class LoginForm extends React.Component {
             withCredentials: true
         }).then(function (response) {
             if (response.data.success) {
-                console.log("success");
             }
         });
     };
