@@ -45,8 +45,8 @@ export default class LoginForm extends React.Component {
         return (
             <div className="auth-container" >
                 <form className="login-form" onSubmit={this.handleClick}>
-                    <input type="text" placeholder="Login" value={this.state.username} onChange={this.updateUsername}/>
-                    <input type="password" placeholder="Password" value={this.state.password} onChange={this.updatePassword}/>
+                    <input aria-labelledby="username" type="text" placeholder="Login" value={this.state.username} onChange={this.updateUsername}/>
+                    <input aria-labelledby="password" type="password" placeholder="Password" value={this.state.password} onChange={this.updatePassword}/>
                     <a href="/"><input className="login-form-button" type="submit" value="Login"/></a>
                 </form>
                 <RegistrationForm/>
