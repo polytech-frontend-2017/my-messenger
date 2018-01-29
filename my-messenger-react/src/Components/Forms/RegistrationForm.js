@@ -58,9 +58,9 @@ export default class RegistrationForm extends React.Component {
     render() {
         return (
             <form className="registration_form" onSubmit={this.handleClick}>
-                <input aria-labelledby="username" type="text" placeholder="Username" value={this.state.username} onChange={this.updateUsername}/>
-                <input aria-labelledby="password" type="password" placeholder="Password" value={this.state.password} onChange={this.updatePassword}/>
-                <input aria-labelledby="confirm-password" type="password" placeholder="Confirm password" value={this.state.confirm} onChange={this.updateConfirm}/>
+                <input aria-label="username" type="text" placeholder="Username" value={this.state.username} onChange={this.updateUsername}/>
+                <input aria-label="password" type="password" placeholder="Password" value={this.state.password} onChange={this.updatePassword}/>
+                <input aria-label="confirm-password" type="password" placeholder="Confirm password" value={this.state.confirm} onChange={this.updateConfirm}/>
                 <input type="submit" value="Sign Up"/>
             </form>
         )
