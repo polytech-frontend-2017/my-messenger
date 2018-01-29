@@ -57,8 +57,8 @@ export default class ChatContainer extends React.Component {
                                         </div>);
                                 }
                             )}
-                            <a href="/create_chat"><button>Add Chat</button></a>
-                            <a href="/"><button onClick={this.handleLogout}>Logout</button></a>
+                            <a href="/create_chat">Add Chat</a>
+                            <a href="/" onClick={this.handleLogout}>Logout</a>
                         </div>
                     }
                     return <div>Something bad happened</div>;

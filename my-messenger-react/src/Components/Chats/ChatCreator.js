@@ -69,7 +69,7 @@ export default class ChatCreator extends React.Component {
                         return(
                             <div>
                                 <div>{html_checkboxes_users}</div>
-                                <a href="/"><button onClick={this.handleCreateChat}>Create Chat</button></a>
+                                <a href="/" onClick={this.handleCreateChat}>Create Chat</a>
                             </div>);
                     }
                     return <div>Something bad happened</div>;
