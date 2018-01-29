@@ -49,7 +49,6 @@ export default class LoginForm extends React.Component {
                     <input type="password" placeholder="Password" value={this.state.password} onChange={this.updatePassword}/>
                     <a href="/"><input className="login-form-button" type="submit" value="Login"/></a>
                 </form>
-                <h1>OR</h1>
                 <RegistrationForm/>
             </div>
         )
